@@ -58,7 +58,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div style={{ backgroundImage: `url(${BackgroundImgHero})` }}>
+        <div
+          className=" bg-cover"
+          style={{ backgroundImage: `url(${BackgroundImgHero})` }}
+        >
           <div className="flex flex-col items-center mt-20 gap-3">
             <p>--- Sip & Savor ---</p>
             <h2 className=" text-4xl font-semibold">Our Popular Products</h2>
@@ -66,7 +69,12 @@ export default function Home() {
               Add Coffee <img className=" inline w-4" src={Aroma} alt="" />
             </button>
           </div>
-          <div>
+          <div className="p-20 grid grid-cols-3 gap-5">
+            <CoffeeCard></CoffeeCard>
+            <CoffeeCard></CoffeeCard>
+            <CoffeeCard></CoffeeCard>
+            <CoffeeCard></CoffeeCard>
+            <CoffeeCard></CoffeeCard>
             <CoffeeCard></CoffeeCard>
           </div>
         </div>
